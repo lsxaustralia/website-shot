@@ -5,7 +5,7 @@ FROM node:16.18.1-alpine
 WORKDIR /usr/src/website-shot
 
 # update and install dependency
-RUN apk add --no-cache git chromium wqy-zenhei --repository http://nl.alpinelinux.org/alpine/edge/testing
+RUN apk add --no-cache git chromium font-noto --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
 
 # copy package.json and install dependencies
 COPY package*.json /usr/src/website-shot/
